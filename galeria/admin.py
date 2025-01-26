@@ -8,13 +8,13 @@ class listandoFotografias(admin.ModelAdmin):
 
     search_fields = ("nome",)
 
-    list_filter = ("categoria",)
+    list_filter = ("categoria", "usuario")
 
     list_editable = ("publicada",)
 
     list_per_page = 10
 
-
+    
 
 
 
