@@ -1,0 +1,15 @@
+{% load static%}
+{% block content %} 
+
+
+   <!-- messages, configurado no _menu -->
+
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }}">
+            {{ message }}
+        </div>
+    {% endfor %}
+{% endif %}
+
+{% endblock %} 
